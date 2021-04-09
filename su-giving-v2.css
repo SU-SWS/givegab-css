@@ -151,7 +151,7 @@ section.ggeWidget .ggeQuestion.ggeQuestion--required select
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    background: url(../img/down.png) no-repeat calc(100% - 18px ) center;
+    background: url(down.png) no-repeat calc(100% - 18px ) center;
     margin: 0;
     width: calc(100% - 38px);
 }
@@ -159,14 +159,14 @@ section.ggeWidget .ggeQuestion--mcsr select:focus,
 section.ggeWidget .ggeQuestion--required.ggeQuestion--mcsr select:focus,
 /** GGE TBD .k_payPlan:focus **/
  {
-    background: rgba(111, 195, 255, 0.2) url(../img/down.png) no-repeat calc(100% - 18px ) center;
+    background: rgba(111, 195, 255, 0.2) url(down.png) no-repeat calc(100% - 18px ) center;
     border: 1px solid #00A8B2;
 }
 section.ggeWidget .ggeQuestion--mcsr select:active,
 section.ggeWidget .ggeQuestion--required.ggeQuestion--mcsr select:active,
 /** GGE TBD .k_payPlan:active **/
  {
-    background: rgba(111, 195, 255, 0.1) url(../img/down.png) no-repeat calc(100% - 18px) center;
+    background: rgba(111, 195, 255, 0.1) url(down.png) no-repeat calc(100% - 18px) center;
 }
 section.ggeWidget .ggeQuestion--mcsr select option,
 section.ggeWidget .ggeQuestion--required.ggeQuestion--mcsr select option,
