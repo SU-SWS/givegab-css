@@ -1,0 +1,557 @@
+/* GGE FORM PREVIEW CENTERING OVERRIDE - REMOVE BEFORE GOING LIVE */
+body[class] div#noform { text-align:left !important;}
+
+body {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+}
+
+/** GGE TBD - FORM CHOOSER **/
+.ui-tabs .ui-tabs-nav {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.ui-tabs .ui-tabs-nav li {
+    background: none;
+    border: 1px solid #D2D3D4;
+    border-radius: 0;
+    color: #007C92;
+    width: 141px;
+    height: 64px;
+    margin: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.ui-tabs .ui-tabs-nav li:last-child {
+    margin-left: 20px;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    color: #fff;
+    cursor: default;
+    background: #007C92;
+    border: 1px solid #007C92;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    color: inherit;
+    padding: 0;
+    font-size: 20px;
+    line-height: 64px;
+    text-align: center;
+    float: none;
+    outline: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* FORM STYLING */
+section.ggeWidget .ggeSection header h1 {
+    font-size: 35px;
+    line-height: 150.84%;
+    font-style: normal;
+    font-weight: normal;
+    margin: 45px 0 0;
+}
+section.ggeWidget .ggeQuestion__label label,
+section.ggeWidget .ggeQuestion__field fieldset legend,
+section.ggeWidget .ggeQuestion--mcmr .ggePrompt__label label,
+section.ggeWidget .ggeQuestion--mcsr .ggePrompt__label label {
+    font-size: 18px;
+    font-style: normal;
+    color: #2e2d29;
+    margin-bottom: 11px;
+}
+section.ggeWidget .ggeQuestion__label label ,
+section.ggeWidget .ggeQuestion--required .ggeQuestion__label label {
+    display: inline-block;
+    font-weight: 600;
+    float: none;
+    margin-top: 45px;
+}
+/* RADIO + CHECKBOX GROUP QUESTIONS */
+section.ggeWidget .ggeQuestion__field fieldset { margin-top: 45px;}
+section.ggeWidget .ggeQuestion__field fieldset legend {
+	display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+}
+section.ggeWidget .ggeQuestion__field fieldset .ggePrompt__checkbox { display: table-cell;}
+section.ggeWidget .ggeQuestion__field fieldset .ggePrompt__label label { width: 100%; }
+
+/* radio buttons/checkboxes */
+section.ggeWidget .ggePrompt__radio input[type=radio],
+section.ggeWidget .ggePrompt__checkbox input[type=checkbox]{
+    height: 24px;
+    width: 24px;
+}
+
+/** HIDE MCMR QUESTION FIELDSET > LEGENDS **/
+section.ggeWidget .ggeQuestion.su-business fieldset legend,
+section.ggeWidget .ggeQuestion.su-anon fieldset legend,
+section.ggeWidget .ggeQuestion.su-pledge fieldset legend {
+    display: none;
+}
+
+/* captions */
+section.ggeWidget .one_col span.ggeQuestion__caption,
+section.ggeWidget .ggeQuestion__field fieldset .ggePrompt__label span.ggeQuestion__caption,
+section.ggeWidget .ggeQuestion--instructions {
+    margin: 0;
+    font-size: 16px;
+    line-height: 119.41%;
+    color: #4d4f53;
+}
+
+/* text fields */
+section.ggeWidget .ggeQuestion input[type=text],
+section.ggeWidget .ggeQuestion input[type=number],
+section.ggeWidget .ggeQuestion input[type=email] {
+    height: 64px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 18px;
+    border: 1px solid #d2d3d4;
+    border-bottom-color: #7A7B7E;
+    outline: 0;
+    padding: 0 20px;
+    margin: 0;
+    max-width: none;
+}
+section.ggeWidget .ggeQuestion--required input[type=text],
+section.ggeWidget .ggeQuestion--required input[type=number],
+section.ggeWidget .ggeQuestion--required input[type=email] {  }
+section.ggeWidget .ggeQuestion input[type=text]:focus,
+section.ggeWidget .ggeQuestion input[type=number]:focus,
+section.ggeWidget .ggeQuestion input[type=email]:focus
+/** GGE TBD - OTHER INPUT TYPES
+section.kimbiaDiv input.k_number:focus,
+section.kimbiaDiv input.k_money:focus,
+section.kimbiaDiv.two_col input.k_money:focus
+**/
+{
+    border: 1px solid #00A8B2;
+    border-bottom-width: 3px;
+}
+
+/* select dropdowns */
+section.ggeWidget .ggeQuestion select,
+section.ggeWidget .ggeQuestion.ggeQuestion--required select
+/** GGE TBD .k_payPlan **/
+ {
+    border: 1px solid #d2d3d4;
+    height: 64px;
+    border-radius: 3px;
+    outline: 0;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    color: #2E2D29;
+    padding: 0 18px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: url(../img/down.png) no-repeat calc(100% - 18px ) center;
+    margin: 0;
+    width: calc(100% - 38px);
+}
+section.ggeWidget .ggeQuestion--mcsr select:focus,
+section.ggeWidget .ggeQuestion--required.ggeQuestion--mcsr select:focus,
+/** GGE TBD .k_payPlan:focus **/
+ {
+    background: rgba(111, 195, 255, 0.2) url(../img/down.png) no-repeat calc(100% - 18px ) center;
+    border: 1px solid #00A8B2;
+}
+section.ggeWidget .ggeQuestion--mcsr select:active,
+section.ggeWidget .ggeQuestion--required.ggeQuestion--mcsr select:active,
+/** GGE TBD .k_payPlan:active **/
+ {
+    background: rgba(111, 195, 255, 0.1) url(../img/down.png) no-repeat calc(100% - 18px) center;
+}
+section.ggeWidget .ggeQuestion--mcsr select option,
+section.ggeWidget .ggeQuestion--required.ggeQuestion--mcsr select option,
+/** GGE TBD .k_payPlan option  **/
+{
+    background: #fff;
+}
+
+/* text area */
+section.ggeWidget .ggeQuestion--text textarea {
+    border: 1px solid #d2d3d4;
+    border-bottom-color:#7A7B7E;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 3px;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+section.ggeWidget .ggeQuestion--text textarea:focus,
+section.ggeWidget .ggeQuestion--required.ggeQuestion--text textarea:focus {
+    border-color: #6FC3FF;
+    border-bottom-width: 3px;
+    outline: 0;
+}
+
+
+/* DONATION SECTION */
+/* OTHER DONATION AMOUNT */
+section.ggeWidget .ggeSection--donation fieldset#DonationLevel .ggePrompt__other .ggePrompt__label {
+	margin: 0 0 26px;
+    font-size: 22.5px;
+}
+section.ggeWidget .ggeSection--donation fieldset#DonationLevel .ggePrompt__label span.ggeQuestion__caption {}
+
+/** MULTIGIVE UI **/
+section.ggeWidget .ggeSection--donation .ggeQuestion--multigive { margin-top: 45px;}
+section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc {}
+section.ggeWidget .ggeSection--donation .ggeQuestion--multigive  div#ggeDc__header--1--DonationLevel--col1 {
+	font-size: 22.5px;
+    font-weight: bold;
+    white-space: nowrap;
+    padding-bottom:26px;
+}
+section.ggeWidget .ggeSection--donation .ggeQuestion--multigive div#ggeDc__header--1--DonationLevel--col2 { display:none;}
+section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row--header .ggeDc__cell:first-of-type { white-space: nowrap;}
+section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton--deleteDc,
+section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton--addDc {
+    background-color: #007C92;
+    border: 1px solid #007C92;
+    width: auto;
+    height: 64px;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 0;
+    padding:1rem 2rem;
+    margin: 0 0 0;
+}
+section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton--deleteDc:before {
+	content: "Remove Gift";
+    font-size: 20px;
+}
+section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton--addDc:before {
+    content: "Add Another Gift";
+    font-size: 20px;
+}
+section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row--subtotal .ggeDc__cell {
+    border-top: none;
+    padding-top: 0;
+    font-size: 22.5px;
+    font-weight: 600;
+}
+section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row--subtotal .ggeDc__cell--subtotal {
+    font-weight: 400;
+}
+/* HIDE THE "ADD ANOTHER GIFT" BUTTON ON SPECIFIC FORMS */
+section.ggeWidget.multigive-pledge-autopay .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--add,
+section.ggeWidget.multigive-recurring .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--add { display:none;}
+
+/* PREVENT DOUBLE ROWS ON LOAD */
+section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row.ggeHidden { display: none;}
+/* MULTIGIVE YOUR INFORMATION SECTION HEADER SWAP */
+section.ggeWidget.multigive-one-time .ggeSection--profile > header > h1 { display:none;}
+section.ggeWidget .ggeSection--profile .su-yourInformation label.k_profileSection {
+	display: block;
+	font-size: 35px;
+    line-height: 150.84%;
+    font-style: normal;
+    margin: 45px 0 0;
+}
+
+/* PAYMENT SCHEDULE UI */
+section.ggeWidget .ggePaymentPlan header h1 { }
+section.ggeWidget .ggePaymentPlan fieldset .ggePrompt--ongoingOption .ggePrompt__radio { display:none;}
+section.ggeWidget .ggePaymentPlan fieldset .ggePrompt--ongoingOption .ggePrompt__label {}
+section.ggeWidget .ggePaymentPlan fieldset .ggePrompt--ongoingOption .ggePrompt__label label { padding-left:0;}
+section.ggeWidget .ggePaymentPlan fieldset .ggePrompt--ongoingOption .ggePrompt__label label .ggePaymentPlan--ongoingOption__interval {}
+section.ggeWidget .ggePaymentPlan fieldset .ggePrompt--ongoingOption .ggePrompt__label label .ggePaymentPlan--ongoingOption__interval select { width: 10em;}
+
+/* YOUR INFORMATION SECTION */
+/** YOUR INFORMATION SECTION AS A GRID **/
+section.ggeWidget .ggeSection--profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1.5rem;
+  justify-items: stretch;
+}
+/** SET HEADER AND QUESTIONS DEFAULT COLUMN SPAN **/ 
+section.ggeWidget .ggeSection--profile header,
+section.ggeWidget .ggeSection--profile .ggeQuestion { grid-column: 1/-1;}
+/** SET ALTERNATE COLUMN SPAN & POSITIONING FOR SPECIFIC QUESTIONS WITH CUSTOM CSS CLASSNAMES **/ 
+section.ggeWidget .ggeSection--profile .ggeQuestion.su-title,
+section.ggeWidget .ggeSection--profile .ggeQuestion.su-ihmo-title,
+section.ggeWidget .ggeSection--profile .ggeQuestion.su-sp-title { grid-column: 1/2;}
+section.ggeWidget .ggeSection--profile .ggeQuestion.su-first-name,
+section.ggeWidget .ggeSection--profile .ggeQuestion.su-ihmo-first-name,
+section.ggeWidget .ggeSection--profile .ggeQuestion.su-imo-first-name,
+section.ggeWidget .ggeSection--profile .ggeQuestion.su-sp-first-name { grid-column: span 2;}
+section.ggeWidget .ggeSection--profile .ggeQuestion.su-middle-initial,
+section.ggeWidget .ggeSection--profile .ggeQuestion.su-sp-middle-initial { grid-column: 4/5;}
+section.ggeWidget .ggeSection--profile .ggeQuestion.su-middle-initial label,
+section.ggeWidget .ggeSection--profile .ggeQuestion.su-sp-middle-initial label { white-space:nowrap;}
+section.ggeWidget .ggeSection--profile .ggeQuestion.su-last-name,
+section.ggeWidget .ggeSection--profile .ggeQuestion.su-ihmo-last-name,
+section.ggeWidget .ggeSection--profile .ggeQuestion.su-imo-last-name,
+section.ggeWidget .ggeSection--profile .ggeQuestion.su-sp-last-name { grid-column: span 2;}
+
+/** MAILING ADDRESS QUESTION AS GRID **/
+section.ggeWidget .ggeSection .ggeAddress {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1.5rem;
+  justify-items: stretch;
+}
+section.ggeWidget .ggeSection--payment .ggeAddress.ggeHidden { display:none;}
+section.ggeWidget .ggeSection .ggeAddress > .ggeQuestion { grid-column: span 1;}
+section.ggeWidget .ggeSection .ggeAddress .ggeAddress__country { grid-column: 1/-1;}
+section.ggeWidget .ggeSection .ggeAddress .ggeAddress__street1 { grid-column: 1/span 2;}
+
+/* PAYMENT DETAILS SECTION */
+/** PAYMENT DETAILS SECTION AS A GRID **/
+section.ggeWidget .ggeSection--payment {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1.5rem;
+  justify-items: stretch;
+}
+section.ggeWidget .ggeSection--payment header,
+section.ggeWidget .ggeSection--payment .ggeQuestion--mobilepayment { grid-column: 1/-1;}
+section.ggeWidget .ggeSection--payment .ggeQuestion--mobilepayment .ggeStripeButton { text-align: center;}
+section.ggeWidget .ggeSection--payment .ggeQuestion--mobilepayment .ggeStripeButton .ggeMobilePay {
+	width:auto;
+	white-space:nowrap;
+}
+section.ggeWidget .ggeSection--payment .ggeQuestion--mobilepayment .ggeStripeButton #ggeMobileContainerDelimiter,
+section.ggeWidget .ggeSection--payment .ggeQuestion--mobilepayment .ggeStripeButton #ggeMobileManualEntryOuter { margin: 0 auto;}
+section.ggeWidget .ggeSection--payment .ggePayment--credit--nameOnCard { grid-column: 1/-1;}
+section.ggeWidget .ggeSection--payment .ggePayment--credit--account { grid-column: 1/-2;}
+section.ggeWidget .ggeSection--payment .ggePayment--credit--verification { grid-column: 4/-1;}
+section.ggeWidget .ggeSection--payment .ggePayment--credit--monthExpires,
+section.ggeWidget .ggeSection--payment .ggePayment--credit--yearExpires { grid-column: span 2;}
+section.ggeWidget .ggeSection--payment .ggePayment--credit--postDate { grid-column: span 4;}
+
+/* BACK & FORWARD NAVIGATION BLOCK */
+section.ggeWidget .ggePageNav { margin-top: 45px;}
+section.ggeWidget .ggePageNav .ggePageNav--back {}
+section.ggeWidget .ggePageNav .ggePageNav--forward {}
+
+/* buttons */
+section.ggeWidget .ggePageNav--back button.ggeButton--back { color: #2e2d29;}
+section.ggeWidget .ggePageNav--back button.ggeButton--back:hover { color: #fff;}
+section.ggeWidget .ggePageNav--forward button.ggeButton--forward {
+	background: #007c92;
+    border: 1px solid #007c92;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: auto;
+    min-width: 80px;
+    height: 64px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: normal;
+    border-radius: 0;
+    margin: 0 18px 20px 0;
+    transition: box-shadow 0.2s ease-in-out;
+}
+/* SUBMIT color */
+section.ggeWidget .ggePageNav--forward button.ggeButton--forward ~ button {
+    background: #B1040E;
+    border: 1px solid #B1040E;
+    min-width: unset;
+    width: 186px;
+    margin: 0;
+}
+section.ggeWidget .ggePageNav--forward button.ggeButton--forward:hover,
+section.ggeWidget .ggePageNav--forward button.ggeButton--forward:focus {
+    background: #B1040E;
+    border: 1px solid #B1040E;
+    box-shadow: 0px 0px 15px #B1040E;
+}
+section.ggeWidget .ggePageNav--forward button.ggeButton--forward:disabled {
+    background: #b1b1b1;
+    border: 1px solid #b1b1b1;
+    box-shadow: none;
+    cursor: not-allowed !important;
+    text-decoration: none;
+}
+
+/* FORM ERROR MESSAGE AT BOTTOM OF PAGE */
+section.ggeWidget .ggePageNav--formError { 
+	background: none;
+	color: #e50808;
+}
+section.ggeWidget .ggePageNav--formError ul {}
+section.ggeWidget .ggePageNav--formError li {
+	list-style: none;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* QUESTION ERROR STATE */
+section.ggeWidget .ggeQuestion--error {
+    background-color: transparent;
+}
+section.ggeWidget .ggeQuestion--error input[type=text],
+section.ggeWidget .ggeQuestion--error input[type=email],
+section.ggeWidget .ggeQuestion--error select,
+section.ggeWidget .ggeQuestion--error textarea {
+    border-color: #e50808;
+}
+section.ggeWidget .ggeQuestion--error .ggeQuestion__error {
+    color: #e50808;
+    padding: 0;
+}
+
+/* TALLY TABLE */
+section.ggeWidget section.ggeTally {}
+section.ggeWidget section.ggeTally table.ggeTallyTable {}
+section.ggeWidget section.ggeTally .ggeText,
+section.ggeWidget section.ggeTally .ggeMoney {
+    /* display: none; */
+}
+section.ggeWidget section.ggeTally .ggeTallyTable .ggeTotal {
+    width: auto;
+    margin: 0 10px;
+    border: none;
+    font-size: 22.5px
+}
+section.ggeWidget section.ggeTally .ggeTallyTable .ggeTotal.ggeMoney {
+    display: block;
+    font-weight: normal;
+}
+
+/* CONFIRMATION MESSAGE */
+section.ggeWidget section.ggeConfirmation { margin-top:45px;}
+section.ggeWidget section.ggeConfirmation .ggeConfirmationCode,
+section.ggeWidget section.ggeConfirmation .ggeConfirmationCharge { display:none;} 
+
+
+/* OLD STYLES TBD */
+#confirm-header > div:first-child {
+    font-size: 35px;
+    font-weight: bold;
+}
+section.kimbiaDiv.two_col .k_confMessage label.k_nonChoice {
+    clear: both;
+    margin: 0;
+}
+section.kimbiaDiv .k_confMessage label.groupLabel.section {
+    clear: both;
+    float: none;
+}
+section.kimbiaDiv .k_confMessage,
+section.kimbiaDiv .k_confMessage div {
+    clear: both;
+}
+.k_content > label.k_confSection.groupLabel:first-child {
+    visibility: hidden;
+}
+.k_confMessage > div:first-child > div {
+    font-size: 28px;
+    font-weight: normal;
+}
+.k_confMessage > div:first-child > div:nth-child(2) {
+    margin-bottom: 35px;
+}
+.k_confMessage > div:first-child > div:nth-child(2) label {
+    font-size: 68px;
+    font-weight: bold;
+}
+#confirm-header .confirm-button {
+    background-color: #007C92;
+    border: 1px solid #00505C;
+    color: #fff;
+    height: 64px;
+    border-radius: 3px;
+    font-size: 20px;
+    padding: 0 20px;
+    margin: 72px 10px 0;
+}
+#confirm-header .confirm-button:hover {
+    box-shadow: 0px 0px 15px #00505C;
+}
+#confirm-intro {
+    margin-bottom: 0;
+}
+#confirm-intro > div:first-child {
+    margin-top: 72px;
+}
+#confirm-intro > div {
+    margin-bottom: 30px;
+    font-size: 22.5px
+}
+#confirm-intro > div:last-child {
+    margin-bottom: 0;
+}
+#confirm-intro > div:first-child label {
+    font-size: 35px;
+    font-weight: bold;
+}
+#confirm-receipt .k_nonChoice {
+    font-size: 22.5px;
+    font-weight: bold;
+}
+#confirm-receipt div {
+    font-size: 18px;
+    font-weight: normal;
+}
+#confirm-questions div {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+section.ggeWidget footer.ggeFooter .ggeSecure { display: none;}
+
+@media only screen and (max-width: 600px) {
+	/** REMOVE GRID FROM YOUR INFORMATION, MAILING ADDRESS QUESTION, & PAYMENT DETAILS **/
+	section.ggeWidget .ggeSection--profile,
+	section.ggeWidget .ggeSection .ggeAddress,
+	section.ggeWidget .ggeSection--payment  { display: block !important;}
+
+	/** STACKED MULTIGIVE UI **/
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc,
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row-group,
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row-group .ggeDc__row,
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row-group .ggeDc__row .ggeDc__cell { display: block !important; overflow:auto !important;}
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row--header .ggeDc__cell:first-of-type { white-space: unset !important;}
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row--header div#ggeDc__header--1--DonationLevel--col2 { display:none !important;}
+	/* PREVENT DOUBLE ROWS ON LOAD */
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row.ggeHidden { display: none !important;}
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row-group .ggeDc__row,
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer { padding-top:16px !important; border-top:1px solid #ccc !important;}
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row-group .ggeDc__row--header,
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row-group .ggeDc__row:nth-of-type(2)  { padding-top:0 !important; border: none !important;}
+	
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row-group .ggeDc__row:nth-of-type(3)::before {
+		content: "Gift Amount";
+		clear: both;
+		display: block;
+		font-size: 18px;
+		margin-bottom: 11px;
+		font-weight: 600;
+	}
+
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row-group .ggeDc__row .ggeDc__cell:nth-of-type(3) { float:left !important;} 
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row-group .ggeDc__row .ggeDc__cell:nth-of-type(4) { float:right !important; padding-right:1em !important;} 
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton--deleteDc { margin-right:1em !important;}
+
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer { display:block !important; margin-top:16px !important;}
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--add,
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--add .ggeDc__cell { display:block !important;}
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--add button.ggeButton--addDc { width:calc(100% - 1em) !important;}
+
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive input.ggeQuestion--money--multigive { width: 8.5em !important;}
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive input.ggeQuestion--money--multigive:disabled { cursor:not-allowed !important;}
+
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal,
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell { display:block !important;}
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell:first-of-type { float:left !important; width:calc(100% - 12em) !important;}
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell:nth-of-type(2),
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell:nth-of-type(4) { display: none !important;}
+
+	section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell--subtotal { width:10em !important; float:right !important; text-align:right !important;}
+
+}
