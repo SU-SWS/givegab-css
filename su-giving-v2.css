@@ -61,7 +61,12 @@ section.ggeWidget .ggeQuestion--mcsr .ggePrompt__label label {
     color: #2e2d29;
     margin-bottom: 11px;
 }
-section.ggeWidget .ggeQuestion__label label ,
+section.ggeWidget .ggeQuestion__label label {
+    display: inline-block;
+    font-weight: 400;
+    float: none;
+    margin-top: 45px;
+}
 section.ggeWidget .ggeQuestion--required .ggeQuestion__label label {
     display: inline-block;
     font-weight: 600;
@@ -187,6 +192,7 @@ section.ggeWidget .ggeQuestion--text textarea {
     padding: 20px;
     box-sizing: border-box;
     width: 100%;
+    resize: none;
 }
 section.ggeWidget .ggeQuestion--text textarea:focus,
 section.ggeWidget .ggeQuestion--required.ggeQuestion--text textarea:focus {
@@ -232,10 +238,12 @@ section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton
 section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton--deleteDc:before {
     content: "Remove Gift";
     font-size: 20px;
+    margin-right: 5px;
 }
 section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton--addDc:before {
     content: "Add Another Gift";
     font-size: 21px;
+    margin-right: 5px;
 }
 section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row--subtotal .ggeDc__cell {
     border-top: none;
@@ -370,9 +378,8 @@ section.ggeWidget .ggePageNav--forward button.ggeButton--forward ~ button {
 }
 section.ggeWidget .ggePageNav--forward button.ggeButton--forward:hover,
 section.ggeWidget .ggePageNav--forward button.ggeButton--forward:focus {
-    background: #B1040E;
-    border: 1px solid #B1040E;
-    box-shadow: 0px 0px 15px #B1040E;
+    background: #820000;
+    border: 1px solid #820000;
 }
 section.ggeWidget .ggePageNav--forward button.ggeButton--forward:disabled {
     background: #b1b1b1;
@@ -561,6 +568,7 @@ section.ggeWidget footer.ggeFooter .ggeSecure { display: none;}
 }
 
 /* new styles */
+.ggeSection.ggeSection--profile header h1,
 .ggeQuestion__caption {
     display: none;
 }
