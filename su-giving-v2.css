@@ -234,6 +234,14 @@ section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton
     margin: 58px 0;
     font-weight: 600;
     text-transform: none;
+    border-bottom: 2px solid transparent;
+}
+section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton--deleteDc:hover,
+section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton--addDc:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #007c92;
+    border-radius: 0;
+    transition: border-color 0.2s ease-in-out;
 }
 section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton--deleteDc:before {
     content: "Remove Gift";
@@ -526,7 +534,7 @@ section.ggeWidget footer.ggeFooter .ggeSecure { display: none;}
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc,
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row-group,
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row-group .ggeDc__row,
-    section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row-group .ggeDc__row .ggeDc__cell { display: block !important; overflow:auto !important;}
+    section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row-group .ggeDc__row .ggeDc__cell { display: block !important;}
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row--header .ggeDc__cell:first-of-type { white-space: unset !important;}
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row--header div#ggeDc__header--1--DonationLevel--col2 { display:none !important;}
     /* PREVENT DOUBLE ROWS ON LOAD */
@@ -577,3 +585,14 @@ section.ggeWidget .ggePrompt__radio input[type=radio]:checked,
 section.ggeWidget .ggePrompt__checkbox input[type=checkbox]:checked {
     background-color: #007c92
 }
+.ggeQuestion.ggeQuestion--instructions.su-gift-specifications {
+    margin-top: 48px;
+}
+
+#YourGiftSpecifications {
+    font-size: 22.5px;
+    font-weight: 700;
+}
+
+/* REMOVE BOLDING OF STREET ADDRESS 2 */
+section.ggeWidget .ggeSection .ggeQuestion--required.ggeAddress .ggeAddress__street2 .ggeQuestion__label label { font-weight:400;}
