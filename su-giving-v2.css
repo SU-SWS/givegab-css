@@ -75,6 +75,7 @@ section.ggeWidget .ggeQuestion--required .ggeQuestion__label label {
 }
 /* RADIO + CHECKBOX GROUP QUESTIONS */
 section.ggeWidget .ggeQuestion__field fieldset { margin-top: 45px;}
+section.ggeWidget .su-pledge .ggeQuestion__field fieldset { margin-top: 0;}
 section.ggeWidget .ggeQuestion__field fieldset legend {
     display: inline-block;
     font-weight: 600;
@@ -359,8 +360,24 @@ section.ggeWidget .ggePageNav .ggePageNav--back {}
 section.ggeWidget .ggePageNav .ggePageNav--forward {}
 
 /* buttons */
-section.ggeWidget .ggePageNav--back button.ggeButton--back { color: #2e2d29;}
-section.ggeWidget .ggePageNav--back button.ggeButton--back:hover { color: #fff;}
+section.ggeWidget .ggePageNav--back button.ggeButton--back {
+    color: #007c92;
+    height: 64px;
+    border: 1px solid #00a4b9;
+    font-weight: 400;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    line-height: initial;
+}
+section.ggeWidget .ggePageNav--back button.ggeButton--back:hover {
+    color: #007c92;
+    background: #fff;
+}
+section.ggeWidget .ggePageNav--back button.ggeButton--back:focus {
+    background: #fff;
+    border: 1px solid #006b81;
+    outline: none;
+}
 section.ggeWidget .ggePageNav--forward button.ggeButton--forward {
     background: #007c92;
     border: 1px solid #007c92;
@@ -374,7 +391,7 @@ section.ggeWidget .ggePageNav--forward button.ggeButton--forward {
     text-transform: none;
     font-weight: normal;
     border-radius: 0;
-    margin: 0 18px 20px 0;
+    margin: 0 0 0 50px;
     transition: box-shadow 0.2s ease-in-out;
 }
 /* SUBMIT color */
@@ -616,6 +633,27 @@ section.ggeWidget .ggePrompt__checkbox input[type=checkbox]:checked {
 
 .ggeConfirmationMessage a:hover {
     text-decoration: underline;
+}
+
+#DonationLevel .ggeDc__row .ggeDc__cell:nth-child(3) {
+    width: 145px;
+}
+
+div.ggeQuestion.ggeQuestion--instructions {
+    margin-top: 45px;
+}
+
+div.ggeQuestion.ggeQuestion--instructions label {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.ggeTallyTable td {
+    padding: 0;
+}
+
+.ggeColumn .ggeTally .ggeTallyTable .ggeTotal.ggeMoney {
+    margin: 0
 }
 
 /* REMOVE BOLDING OF STREET ADDRESS 2 */
