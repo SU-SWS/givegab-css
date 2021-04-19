@@ -368,6 +368,7 @@ section.ggeWidget .ggePageNav--back button.ggeButton--back {
     padding: 20px 30px;
     box-sizing: border-box;
     line-height: initial;
+    text-transform: none;
 }
 section.ggeWidget .ggePageNav--back button.ggeButton--back:hover {
     color: #007c92;
@@ -393,6 +394,14 @@ section.ggeWidget .ggePageNav--forward button.ggeButton--forward {
     border-radius: 0;
     margin: 0 0 0 50px;
     transition: box-shadow 0.2s ease-in-out;
+}
+section.ggeWidget .ggePageNav--forward button.ggeButton--forward[type="submit"] {
+  background: #b1040e;
+  border-color: #b1040e;
+}
+section.ggeWidget .ggePageNav--forward button.ggeButton--forward[type="submit"]:hover {
+  background: #350d36;
+  border-color: #350d36;
 }
 /* SUBMIT color */
 section.ggeWidget .ggePageNav--forward button.ggeButton--forward ~ button {
