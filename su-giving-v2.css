@@ -656,5 +656,9 @@ div.ggeQuestion.ggeQuestion--instructions label {
     margin: 0
 }
 
+#ggeNoMobileLabel {
+    display: none;
+}
+
 /* REMOVE BOLDING OF STREET ADDRESS 2 */
 section.ggeWidget .ggeSection .ggeQuestion--required.ggeAddress .ggeAddress__street2 .ggeQuestion__label label { font-weight:400;}
