@@ -574,14 +574,14 @@ section.ggeWidget footer.ggeFooter .ggeSecure { display: none;}
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row-group .ggeDc__row:nth-of-type(3)::before {
         content: "Gift Amount";
         clear: both;
-        display: block;
+        display: none;
         font-size: 18px;
         margin-bottom: 11px;
         font-weight: 600;
     }
 
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row-group .ggeDc__row .ggeDc__cell:nth-of-type(3) { float:left !important;} 
-    section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row-group .ggeDc__row .ggeDc__cell:nth-of-type(4) { float:right !important; padding-right:1em !important;} 
+    section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row-group .ggeDc__row .ggeDc__cell:nth-of-type(4) { clear: both;padding-right:0;} 
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton--deleteDc { margin-right:1em !important;}
 
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer { display:block !important; margin-top:16px !important;}
@@ -594,11 +594,34 @@ section.ggeWidget footer.ggeFooter .ggeSecure { display: none;}
 
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal,
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell { display:block !important;}
-    section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell:first-of-type { float:left !important; width:calc(100% - 12em) !important;}
+    section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell:first-of-type { float:left !important;}
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell:nth-of-type(2),
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell:nth-of-type(4) { display: none !important;}
 
-    section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell--subtotal { width:10em !important; float:right !important; text-align:right !important;}
+    section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell--subtotal { float:right !important; text-align:right !important;}
+
+    section.ggeWidget .ggePageNav--forward button.ggeButton--forward {
+        margin: 0;
+        line-height: 100%;
+    }
+
+    section.ggeWidget .ggePageNav {
+        display: block;
+    }
+
+    .ggePageNav--back {
+        position: relative;
+    }
+
+    section.ggeWidget .ggePageNav--back button.ggeButton--back,
+    section.ggeWidget .ggePageNav--forward button.ggeButton--forward[type="submit"] {
+        width: 100%;
+    }
+
+    section.ggeWidget .ggePageNav .ggePageNav--forward {
+        width: 100%;
+        display: block;
+    }
 
 }
 
