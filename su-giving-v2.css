@@ -161,6 +161,7 @@ section.ggeWidget .ggeQuestion.ggeQuestion--required select
     background: url(down.png) no-repeat calc(100% - 18px ) center;
     margin: 0;
     width: calc(100% - 38px);
+    line-height: 2.5rem;
 }
 section.ggeWidget .ggeQuestion--mcsr select:focus,
 section.ggeWidget .ggeQuestion--required.ggeQuestion--mcsr select:focus,
@@ -564,7 +565,7 @@ section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton
     /** REMOVE GRID FROM YOUR INFORMATION, MAILING ADDRESS QUESTION, & PAYMENT DETAILS **/
     section.ggeWidget .ggeSection--profile,
     section.ggeWidget .ggeSection .ggeAddress,
-    section.ggeWidget .ggeSection--payment  { display: block !important;}
+    section.ggeWidget .ggeSection--payment  { display: block;}
 
     /** STACKED MULTIGIVE UI **/
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc,
