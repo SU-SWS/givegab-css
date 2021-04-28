@@ -162,6 +162,7 @@ section.ggeWidget .ggeQuestion.ggeQuestion--required select
     margin: 0;
     width: calc(100% - 38px);
     line-height: 2.5rem;
+    min-width: 90px;
 }
 section.ggeWidget .ggeQuestion--mcsr select:focus,
 section.ggeWidget .ggeQuestion--required.ggeQuestion--mcsr select:focus,
@@ -698,7 +699,7 @@ div.ggeQuestion.ggeQuestion--instructions label {
 }
 
 .ggeTallyTable td {
-    padding: 0;
+    padding: 12px 0;
 }
 
 .ggeColumn .ggeTally .ggeTallyTable .ggeTotal.ggeMoney {
