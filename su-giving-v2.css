@@ -234,7 +234,7 @@ section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton
     box-sizing: border-box;
     font-size: 21px;
     padding: 0 0;
-    margin: 58px 0;
+    margin: 28px 0;
     font-weight: 600;
     text-transform: none;
     border-bottom: 2px solid transparent;
@@ -556,10 +556,14 @@ section.ggeWidget footer.ggeFooter .ggeSecure { display: none;}
 section.ggeWidget .ggeSection--donation .ggeQuestion--multigive,
 section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc.DonationLevel { width:100%;}
 section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row .ggeDc__cell:first-of-type,
-section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row .ggeDc__cell:nth-of-type(2) { width: 49%;}
+section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row .ggeDc__cell:nth-of-type(2) {width: 100%;}
 section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row .ggeDc__cell input.ggeQuestion--money--multigive { width: 154px;}
 section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row .ggeDc__cell:last-child { max-width:130px;}
-section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton--deleteDc { width: 130px;}
+section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton--deleteDc {width: auto;}
+
+.ggeDc__cell {
+   display: block;
+}
 
 @media only screen and (max-width: 600px) {
     /** REMOVE GRID FROM YOUR INFORMATION, MAILING ADDRESS QUESTION, & PAYMENT DETAILS **/
