@@ -328,7 +328,8 @@ section.ggeWidget .ggeSection .ggeAddress {
   grid-column-gap: 1.5rem;
   justify-items: stretch;
 }
-section.ggeWidget .ggeSection--payment .ggeAddress.ggeHidden { display:none;}
+section.ggeWidget .ggeSection--payment .ggeAddress.ggeHidden {display: block;}
+section.ggeWidget .ggeSection--payment .ggeAddress.ggeHidden .ggeQuestion:not(.ggeAddress__zipcode) {display: none;}
 section.ggeWidget .ggeSection .ggeAddress > .ggeQuestion { grid-column: span 1;}
 section.ggeWidget .ggeSection .ggeAddress .ggeAddress__country { grid-column: 1/-1;}
 section.ggeWidget .ggeSection .ggeAddress .ggeAddress__street1 { grid-column: 1/span 2;}
