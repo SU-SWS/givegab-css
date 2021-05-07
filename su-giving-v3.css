@@ -330,6 +330,7 @@ section.ggeWidget .ggeSection .ggeAddress {
 }
 section.ggeWidget .ggeSection--payment .ggeAddress.ggeHidden {display: block;}
 section.ggeWidget .ggeSection--payment .ggeAddress.ggeHidden .ggeQuestion:not(.ggeAddress__zipcode) {display: none;}
+.ggeAddress__zipcode label::before { content: 'Billing ' }
 section.ggeWidget .ggeSection .ggeAddress > .ggeQuestion { grid-column: span 1;}
 section.ggeWidget .ggeSection .ggeAddress .ggeAddress__country { grid-column: 1/-1;}
 section.ggeWidget .ggeSection .ggeAddress .ggeAddress__street1 { grid-column: 1/span 2;}
