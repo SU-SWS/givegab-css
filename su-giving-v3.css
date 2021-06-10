@@ -17,7 +17,7 @@ body {
 }
 .ggeTabListItem--selected button, .ggeTabListItem button:hover {
     background: #007C92;
-    padding: .5em .66em;
+    padding: .5em 1.5em;
 }
 .ggeTabListItem button {
     -webkit-appearance: none;
@@ -29,7 +29,7 @@ body {
     cursor: pointer;
     font-size: 23px;
     font-weight: 600;
-    padding: .33em 1em;
+    padding: .5em 1.5em;
     -webkit-transition: none;
     -o-transition: none;
     transition: none;
