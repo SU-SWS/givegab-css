@@ -23,18 +23,16 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: #e0e0e0;
     border: none;
     border-bottom: 0;
-    border-radius: 0;
-    color: #666;
+    border-radius: 3px;
     cursor: pointer;
     font-size: 23px;
     font-weight: 600;
-    padding: .33em .66em;
-    -webkit-transition: all .25s ease-out;
-    -o-transition: all .25s ease-out;
-    transition: all .25s ease-out;
+    padding: .33em 1em;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
     vertical-align: bottom;
 }
 .ui-tabs .ui-tabs-nav {
