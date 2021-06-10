@@ -6,6 +6,7 @@ body {
 }
 
 /** GGE TBD - FORM CHOOSER **/
+/** PM edits remove this before production **/
 .ggeTabPanelContainer {
     border: none;
     padding: 1em 0 0 0;
@@ -35,6 +36,16 @@ body {
     transition: none;
     vertical-align: bottom;
 }
+#ggeDc__header--3--DonationLevel--col1 {
+ font-weight: 600; 
+}
+#ggeDc__header--3--DonationLevel--col3 {
+ display: none;   
+}
+#ggeDc__header--3--DonationLevel--col2 {
+ display: none;   
+}
+/** end PM edits **/
 .ui-tabs .ui-tabs-nav {
     border: none;
     margin: 0;
