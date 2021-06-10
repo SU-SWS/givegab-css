@@ -43,6 +43,15 @@ input[type="text"]:disabled { /** Hide the second dropdown field if it doesn't h
     transition: none;
     vertical-align: bottom;
 }
+#ggeDc__header--2--DonationLevel--col1 {
+ font-weight: 600; 
+}
+#ggeDc__header--2--DonationLevel--col2 {
+ display: none;   
+}
+#ggeDc__header--2--DonationLevel--col3 {
+ display: none;   
+}
 #ggeDc__header--3--DonationLevel--col1 {
  font-weight: 600; 
 }
