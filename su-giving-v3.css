@@ -7,6 +7,10 @@ body {
 
 /** GGE TBD - FORM CHOOSER **/
 /** PM edits remove this before production **/
+
+input[type="text"]:disabled { /** Hide the second dropdown field if it doesn't have a value **/
+  display: none;
+}
 .ggeTabList {
     margin-top: 45px;
 }
