@@ -8,8 +8,12 @@ body {
 /** GGE TBD - FORM CHOOSER **/
 /** PM edits remove this before production **/
 
-input[type="text"]:disabled { /** Hide the second dropdown field if it doesn't have a value **/
-  display: none;
+#ggeDc__row1__col2:disabled { /** Hide the second dropdown field if it doesn't have a value **/
+  display:none;
+}
+label[for="ggeDc__row1__col1__other"] { /** Style the "Other" label **/
+padding: .66em 0 .33em 0;
+font-weight:600;
 }
 .ggeTabList {
     margin-top: 45px;
@@ -61,7 +65,9 @@ input[type="text"]:disabled { /** Hide the second dropdown field if it doesn't h
 #ggeDc__header--3--DonationLevel--col2 {
  display: none;   
 }
+
 /** end PM edits **/
+
 .ui-tabs .ui-tabs-nav {
     border: none;
     margin: 0;
