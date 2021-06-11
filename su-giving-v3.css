@@ -7,7 +7,9 @@ body {
 
 /** GGE TBD - FORM CHOOSER **/
 /** PM edits remove this before production **/
-
+#ggeFormChooser1--panel2 .ggeDc__row.ggeDc__row--subtotal { /** hide the Subtotal field on the second form chooser panel2 for recurring **/
+    display:none;
+}
 #ggeDc__row1__col2:disabled { /** Hide the second dropdown field if it doesn't have a value **/
   display:none;
 }
