@@ -22,19 +22,32 @@ label[for="ggeDc__row1__col1__other"] { /** Style the "Other" label **/
 }
 .ggeTabList {
     margin-top: 45px;
+    border: 1px solid #C0C0BF;
+    padding: 5px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
 }
 .ggeTabPanelContainer {
     border: none;
     padding: 1em 0 0 0;
+}
+.ggeTabListItem {
+    width: calc(50% - 10px);
 }
 .ggeTabListItem--selected button {
     color: #FFF;
     -webkit-transform: none;
     transform: none;
 }
-.ggeTabListItem--selected button, .ggeTabListItem button:hover {
+.ggeTabListItem.ggeTabListItem--selected button,
+.ggeTabListItem.ggeTabListItem button:hover {
     background: #007C92;
     padding: .5em 2.5em;
+}
+.ggeTabListItem.ggeTabListItem button:active,
+.ggeTabListItem.ggeTabListItem button:focus {
+    outline: none;
 }
 .ggeTabListItem button {
     -webkit-appearance: none;
@@ -51,6 +64,8 @@ label[for="ggeDc__row1__col1__other"] { /** Style the "Other" label **/
     -o-transition: none;
     transition: none;
     vertical-align: bottom;
+    width: 100%;
+    background: #fff;
 }
 #ggeDc__header--2--DonationLevel--col1 {
  font-weight: 600; 
@@ -352,7 +367,7 @@ section.ggeWidget .ggeSection--profile .su-yourInformation label.k_profileSectio
 }
 
 /* PAYMENT SCHEDULE UI */
-section.ggeWidget .ggePaymentPlan header h1 { }
+section.ggeWidget .ggePaymentPlan header h1 {overflow: hidden;height: 0;}
 section.ggeWidget .ggePaymentPlan fieldset .ggePrompt--ongoingOption .ggePrompt__radio { display:none;}
 section.ggeWidget .ggePaymentPlan fieldset .ggePrompt--ongoingOption .ggePrompt__label {}
 section.ggeWidget .ggePaymentPlan fieldset .ggePrompt--ongoingOption .ggePrompt__label label { padding-left:0;}
@@ -635,6 +650,111 @@ section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton
    display: block;
 }
 
+/* new styles */
+.ggeSection.ggeSection--profile header h1,
+.ggeQuestion__caption {
+    display: none;
+}
+
+section.ggeWidget .ggePrompt__radio input[type=radio]:checked,
+section.ggeWidget .ggePrompt__checkbox input[type=checkbox]:checked {
+    background-color: #007c92
+}
+.ggeQuestion.ggeQuestion--instructions.su-gift-specifications {
+    margin-top: 48px;
+}
+
+#YourGiftSpecifications,
+#IHOHonoreeHeader label,
+#IMOInMemoryofHeader label {
+    font-size: 22.5px;
+    font-weight: 700;
+    margin-top: 48px;
+}
+
+.ggeQuestion.ggeQuestion--mcsr.su-ihmo-title label,
+.ggeQuestion.ggeQuestion--text.su-ihmo-first-name label,
+.ggeQuestion.ggeQuestion--text.su-ihmo-last-name label {
+    font-weight: 600;
+}
+
+.ggeConfirmation h1 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.ggeConfirmationMessage a {
+    color: #007c92;
+    text-decoration: none;
+}
+
+.ggeConfirmationMessage a:hover {
+    text-decoration: underline;
+}
+
+#DonationLevel .ggeDc__row .ggeDc__cell:nth-child(3) {
+    width: 145px;
+}
+
+div.ggeQuestion.ggeQuestion--instructions {
+    margin-top: 45px;
+}
+
+div.ggeQuestion.ggeQuestion--instructions label {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.ggeTallyTable td {
+    padding: 12px 0;
+}
+
+.ggeColumn .ggeTally .ggeTallyTable .ggeTotal.ggeMoney {
+    margin: 0
+}
+
+#ggeNoMobileLabel {
+    display: none;
+}
+
+/* REMOVE BOLDING OF STREET ADDRESS 2 */
+section.ggeWidget .ggeSection .ggeQuestion--required.ggeAddress .ggeAddress__street2 .ggeQuestion__label label { font-weight:400;}
+
+/* flex the subtotal */
+#DonationLevel .ggeDc__row--subtotal {
+    display: flex;
+}
+#DonationLevel .ggeDc__cell {
+    flex: 0 0 0%;
+}
+
+/* hide payment plan radio */
+.ggePaymentPlan .ggePrompt__radio {
+    display: none;
+}
+
+.ggePaymentPlan fieldset label {
+    padding: 0
+}
+
+@media only screen and (max-width: 1400px) {
+    .ggeTabListItem button {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .ggeTabListItem button {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .ggeTabListItem button {
+        font-size: 16px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     /** REMOVE GRID FROM YOUR INFORMATION, MAILING ADDRESS QUESTION, & PAYMENT DETAILS **/
     section.ggeWidget .ggeSection--profile,
@@ -711,73 +831,3 @@ section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row .ggeDc__cell:nth-of-type(2) { width: 100%;}
 
 }
-
-/* new styles */
-.ggeSection.ggeSection--profile header h1,
-.ggeQuestion__caption {
-    display: none;
-}
-
-section.ggeWidget .ggePrompt__radio input[type=radio]:checked,
-section.ggeWidget .ggePrompt__checkbox input[type=checkbox]:checked {
-    background-color: #007c92
-}
-.ggeQuestion.ggeQuestion--instructions.su-gift-specifications {
-    margin-top: 48px;
-}
-
-#YourGiftSpecifications,
-#IHOHonoreeHeader label,
-#IMOInMemoryofHeader label {
-    font-size: 22.5px;
-    font-weight: 700;
-    margin-top: 48px;
-}
-
-.ggeQuestion.ggeQuestion--mcsr.su-ihmo-title label,
-.ggeQuestion.ggeQuestion--text.su-ihmo-first-name label,
-.ggeQuestion.ggeQuestion--text.su-ihmo-last-name label {
-    font-weight: 600;
-}
-
-.ggeConfirmation h1 {
-    font-size: 35px;
-    font-weight: 700;
-}
-
-.ggeConfirmationMessage a {
-    color: #007c92;
-    text-decoration: none;
-}
-
-.ggeConfirmationMessage a:hover {
-    text-decoration: underline;
-}
-
-#DonationLevel .ggeDc__row .ggeDc__cell:nth-child(3) {
-    width: 145px;
-}
-
-div.ggeQuestion.ggeQuestion--instructions {
-    margin-top: 45px;
-}
-
-div.ggeQuestion.ggeQuestion--instructions label {
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.ggeTallyTable td {
-    padding: 12px 0;
-}
-
-.ggeColumn .ggeTally .ggeTallyTable .ggeTotal.ggeMoney {
-    margin: 0
-}
-
-#ggeNoMobileLabel {
-    display: none;
-}
-
-/* REMOVE BOLDING OF STREET ADDRESS 2 */
-section.ggeWidget .ggeSection .ggeQuestion--required.ggeAddress .ggeAddress__street2 .ggeQuestion__label label { font-weight:400;}
