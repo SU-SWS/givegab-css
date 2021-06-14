@@ -85,14 +85,13 @@ label[for="ggeDc__row1__col1__other"] { /** Style the "Other" label **/
 #ggeDc__header--3--DonationLevel--col2 {
  display: none;   
 }
-.ggePrompt__label label {
+.ggePrompt__label label { /** Style the recurring/pledge frequency label **/
     margin-bottom: 10px;
 }
-label[for="ggePaymentPlan--ongoingOption"] { /** Style the "Other" label **/
+label[for="ggePaymentPlan--ongoingOption"] { /** Style the recurring frequency label **/
     white-space: nowrap;
 }
-
-#ggePaymentPlan--installmentOption__select {
+#ggePaymentPlan--installmentOption__select { /** Style the recurring/pledge frequency label **/
     margin: 20px 0 10px 0;
 }
 
