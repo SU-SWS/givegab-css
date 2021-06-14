@@ -85,7 +85,9 @@ label[for="ggeDc__row1__col1__other"] { /** Style the "Other" label **/
 #ggeDc__header--3--DonationLevel--col2 {
  display: none;   
 }
-
+.ggePrompt__label label {
+    white-space: nowrap;
+}
 /** end PM edits **/
 
 .ui-tabs .ui-tabs-nav {
