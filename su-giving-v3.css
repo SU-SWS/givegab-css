@@ -86,8 +86,16 @@ label[for="ggeDc__row1__col1__other"] { /** Style the "Other" label **/
  display: none;   
 }
 .ggePrompt__label label {
+    margin-bottom: 10px;
+}
+label[for="ggePaymentPlan--ongoingOption"] { /** Style the "Other" label **/
     white-space: nowrap;
 }
+
+#ggePaymentPlan--installmentOption__select {
+    margin: 20px 0 10px 0;
+}
+
 /** end PM edits **/
 
 .ui-tabs .ui-tabs-nav {
