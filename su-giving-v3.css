@@ -7,6 +7,12 @@ body {
 
 /** GGE TBD - FORM CHOOSER **/
 /** PM edits remove this before production **/
+#YourPledgeDetails { /** hiding pledge details label above pledge duration on pledge with autopay form **/
+    display:none;
+}
+.multigive-pledge-offline .ggeDc__row--add { /** hiding the add a gift button on the pledge form **/
+    display:none;
+}
 #ggeFormChooser1--panel2 .ggeDc__row.ggeDc__row--subtotal { /** hide the Subtotal field on the second form chooser panel2 for recurring **/
     display:none;
 }
