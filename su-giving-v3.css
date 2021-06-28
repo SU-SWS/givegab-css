@@ -477,7 +477,7 @@ section.ggeWidget .ggePageNav .ggePageNav--forward {}
 
 /* buttons */
 section.ggeWidget .ggePageNav--back button.ggeButton--back {
-    color: #007c92;
+    color: #fff;
     height: 64px;
     border: 1px solid #00a4b9;
     font-weight: 400;
@@ -766,6 +766,14 @@ section.ggeWidget .ggeSection .ggeQuestion--required.ggeAddress .ggeAddress__str
     padding: 0
 }
 
+/* 
+  hide subtotal from .multigive-pledge-autopay
+  Pledge with Autopay Test
+*/
+.multigive-pledge-autopay .ggeDc__footer {
+    display: none;
+}
+
 @media only screen and (max-width: 1400px) {
     .ggeTabListItem button {
         font-size: 20px;
@@ -849,6 +857,7 @@ section.ggeWidget .ggeSection .ggeQuestion--required.ggeAddress .ggeAddress__str
     section.ggeWidget .ggePageNav--back button.ggeButton--back,
     section.ggeWidget .ggePageNav--forward button.ggeButton--forward[type="submit"] {
         width: 100%;
+        margin: 0;
     }
 
     section.ggeWidget .ggePageNav .ggePageNav--forward {
