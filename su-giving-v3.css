@@ -638,9 +638,10 @@ section.kimbiaDiv .k_confMessage div {
 #confirm-intro {
     margin-bottom: 0;
 }
-#confirm-intro > div:first-child {
+/* PM - removing margin */
+/* #confirm-intro > div:first-child {
     margin-top: 72px;
-}
+} */
 #confirm-intro > div {
     margin-bottom: 30px;
     font-size: 22.5px;
