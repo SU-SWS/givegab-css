@@ -643,18 +643,21 @@ section.kimbiaDiv .k_confMessage div {
 }
 #confirm-intro > div {
     margin-bottom: 30px;
-    font-size: 22.5px
+    font-size: 22.5px;
+    line-height: 1.4
 }
 #confirm-intro > div:last-child {
     margin-bottom: 0;
 }
-#confirm-intro > div:first-child label {
+/* PM - removing to reduce heading size on confirmation message */
+/*(#confirm-intro > div:first-child label {
     font-size: 35px;
     font-weight: bold;
-}
+}*/
 #confirm-receipt .k_nonChoice {
     font-size: 22.5px;
     font-weight: bold;
+    margin-bottom: 15px;
 }
 #confirm-receipt div {
     font-size: 18px;
