@@ -114,7 +114,9 @@ label[for="ggePaymentPlan--ongoingOption"] { /** Style the recurring frequency l
 #ggePaymentPlan--installmentOption__select { /** Style the recurring/pledge frequency label **/
     margin: 20px 0 10px 0;
 }
-
+#MembershipPrintedCard legend {
+    display: none;
+}
 /** end PM edits **/
 
 .ui-tabs .ui-tabs-nav {
