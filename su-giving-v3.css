@@ -686,7 +686,7 @@ section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton
 /* new styles */
 .ggeSection.ggeSection--profile header h1,
 .ggeQuestion__caption {
-    display: none;
+    /* display: none; REMOVING THIS SO THAT MEMBERSHIP FMV DISPLAYS */
 }
 
 section.ggeWidget .ggePrompt__radio input[type=radio]:checked,
