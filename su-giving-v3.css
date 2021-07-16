@@ -686,9 +686,11 @@ section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton
 }
 
 /* new styles */
-.ggeSection.ggeSection--profile header h1,
-.ggeQuestion__caption {
-    /* display: none; REMOVING THIS SO THAT MEMBERSHIP FMV DISPLAYS */
+#ggeQuestion__caption--3--DonationLevel.ggeQuestion__caption {
+    display: none; /* hide the min max donation amount caption */
+}
+.ggeSection.ggeSection--profile header h1 {
+    display: none;  /* hide the H1 in the form */
 }
 
 section.ggeWidget .ggePrompt__radio input[type=radio]:checked,
