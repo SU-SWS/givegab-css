@@ -690,7 +690,7 @@ section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton
     display: none; /* hide the min max donation amount caption */
 }
 .ggeSection.ggeSection--profile header h1 {
-    display: none;  /* hide the H1 in the form */
+     /* display: none;  hide the H1 in the form */
 }
 
 section.ggeWidget .ggePrompt__radio input[type=radio]:checked,
