@@ -27,6 +27,12 @@ body {
 #YourPledgeDetails { /** hiding pledge details label above pledge duration on pledge with autopay form **/
     display:none;
 }
+.ggePrompt--installmentOption .ggeQuestion__caption { /** hiding min max label on pledge autopay **/
+    display:none;
+}
+#ggeQuestion__caption--2--DonationLevel { /** hiding min max label on single and multigive **/
+    display:none;
+}
 #ggeFormChooser1--panel2 .ggeDc__row.ggeDc__row--subtotal { /** hide the Subtotal field on the second form chooser panel2 for recurring **/
     display:none;
 }
