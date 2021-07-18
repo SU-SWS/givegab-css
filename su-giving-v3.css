@@ -33,6 +33,9 @@ body {
 #ggeQuestion__caption--2--DonationLevel { /** hiding min max label on single and multigive **/
     display:none;
 }
+.ggeSection.ggeSection--profile header h1 {
+     display: none;  /* hide the H1 in the form */
+}
 #ggeFormChooser1--panel2 .ggeDc__row.ggeDc__row--subtotal { /** hide the Subtotal field on the second form chooser panel2 for recurring **/
     display:none;
 }
@@ -694,9 +697,6 @@ section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton
 /* new styles */
 #ggeQuestion__caption--3--DonationLevel.ggeQuestion__caption {
     display: none; /* hide the min max donation amount caption */
-}
-.ggeSection.ggeSection--profile header h1 {
-     /* display: none;  hide the H1 in the form */
 }
 
 section.ggeWidget .ggePrompt__radio input[type=radio]:checked,
