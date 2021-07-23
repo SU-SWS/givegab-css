@@ -334,7 +334,10 @@ section.ggeWidget .ggeSection--donation fieldset#DonationLevel .ggePrompt__other
     margin: 0 0 26px;
     font-size: 22.5px;
 }
-section.ggeWidget .ggeSection--donation fieldset#DonationLevel .ggePrompt__label span.ggeQuestion__caption {}
+section.ggeWidget .ggeSection--donation fieldset#DonationLevel .ggePrompt__label span.ggeQuestion__caption {
+    margin-bottom: 11px;
+    padding: 0 .5em;
+}
 
 /** MULTIGIVE UI **/
 section.ggeWidget .ggeSection--donation .ggeQuestion--multigive { margin-top: 45px;}
@@ -786,6 +789,14 @@ section.ggeWidget .ggeSection .ggeQuestion--required.ggeAddress .ggeAddress__str
 */
 .multigive-pledge-autopay .ggeDc__footer {
     display: none;
+}
+
+.ggePrompt__label {
+    vertical-align: top;
+}
+
+#DonationLevel .ggePrompt__label label {
+    margin-bottom: 0;
 }
 
 @media only screen and (max-width: 1400px) {
