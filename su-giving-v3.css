@@ -23,6 +23,10 @@ body {
     margin: 0 0 0 50px;
     transition: box-shadow 0.2s ease-in-out;
 }
+
+.ggeButton:first-child:last-child {
+    margin: 0;
+}
     
 #YourPledgeDetails { /** hiding pledge details label above pledge duration on pledge with autopay form **/
     display:none;
@@ -172,7 +176,7 @@ section.ggeWidget .ggeSection header h1 {
     line-height: 150.84%;
     font-style: normal;
     font-weight: 700;
-    margin: 45px 0 0;
+    margin: 0;
 }
 section.ggeWidget .ggeQuestion__label label,
 section.ggeWidget .ggeQuestion__field fieldset legend,
@@ -485,7 +489,7 @@ section.ggeWidget .ggeSection--payment .ggePayment--credit--yearExpires { grid-c
 section.ggeWidget .ggeSection--payment .ggePayment--credit--postDate { grid-column: span 4;}
 
 /* BACK & FORWARD NAVIGATION BLOCK */
-section.ggeWidget .ggePageNav { margin-top: 45px;}
+section.ggeWidget .ggePageNav {margin: 45px 0 0;}
 section.ggeWidget .ggePageNav .ggePageNav--back {}
 section.ggeWidget .ggePageNav .ggePageNav--forward {}
 
@@ -524,6 +528,9 @@ section.ggeWidget .ggePageNav--forward button.ggeButton--forward {
     border-radius: 0;
     margin: 0 0 0 50px;
     transition: box-shadow 0.2s ease-in-out;
+}
+section.ggeWidget .ggePageNav--forward button.ggeButton--forward:first-child:last-child {
+    margin: 0;
 }
 section.ggeWidget .ggePageNav--forward button.ggeButton--forward[type="submit"] {
   background: #b1040e;
@@ -600,7 +607,6 @@ section.ggeWidget section.ggeTally .ggeTallyTable .ggeTotal.ggeMoney {
 }
 
 /* CONFIRMATION MESSAGE */
-section.ggeWidget section.ggeConfirmation { margin-top:45px;}
 section.ggeWidget section.ggeConfirmation .ggeConfirmationCode,
 section.ggeWidget section.ggeConfirmation .ggeConfirmationCharge { display:none;} 
 
