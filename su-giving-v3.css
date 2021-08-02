@@ -390,6 +390,7 @@ section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton
 section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row--subtotal .ggeDc__cell {
     border-top: none;
     padding-top: 0;
+    padding-right: 0;
     font-size: 22.5px;
     font-weight: 600;
 }
