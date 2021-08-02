@@ -384,6 +384,7 @@ section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton
     font-weight: 600;
     text-transform: none;
     border-bottom: 2px solid transparent;
+    box-shadow: none;
 }
 section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton--deleteDc:hover,
 section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton--addDc:hover {
@@ -521,24 +522,24 @@ section.ggeWidget .ggePageNav--back button.ggeButton--back {
     box-sizing: border-box;
     line-height: initial;
     text-transform: none;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
 section.ggeWidget .ggePageNav--back button.ggeButton--back:hover {
     color: #006b81;
-    border-color: #006b81;
+    border: 1px solid #006B81;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
 section.ggeWidget .ggePageNav--back button.ggeButton--back:focus {
-    background: #fff;
-    border: 3px solid rgba(0, 154, 180, 0.5);
+    border: 1px solid #006B81;
     color: #006b81;
     outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 154, 180, 0.5);
 }
 section.ggeWidget .ggePageNav--back button.ggeButton--back:active {
     border: 3px solid #009AB4;
     color: #006b81;
 }
 section.ggeWidget .ggePageNav--forward button.ggeButton--forward {
-    background: #007c92;
-    border: 3px solid #007c92;
     box-sizing: border-box;
     border-radius: 3px;
     width: auto;
@@ -548,9 +549,11 @@ section.ggeWidget .ggePageNav--forward button.ggeButton--forward {
     font-size: 20px;
     text-transform: none;
     font-weight: normal;
-    border-radius: 0;
     margin: 0 0 0 50px;
     transition: box-shadow 0.2s ease-in-out;
+    background: #007C92;
+    border: 1px solid #009AB4;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
 section.ggeWidget .ggePageNav--forward button.ggeButton--forward:first-child:last-child {
     margin: 0;
@@ -560,18 +563,22 @@ section.ggeWidget .ggePageNav--forward button.ggeButton--forward:first-child:las
 section.ggeWidget .ggePageNav--forward button.ggeButton--forward[type="submit"] {
   background: #b1040e;
   border: 1px solid #E50808;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
 section.ggeWidget .ggePageNav--forward button.ggeButton--forward[type="submit"]:hover {
   background: #820000;
   border-color: #b1040e;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
 section.ggeWidget .ggePageNav--forward button.ggeButton--forward[type="submit"]:focus {
   background: #820000;
   border: 3px solid rgba(229, 8, 8, 0.5);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1), 0px 3px 6px rgba(0, 0, 0, 0.13);
 }
 section.ggeWidget .ggePageNav--forward button.ggeButton--forward[type="submit"]:active {
   background: #b1040e;
   border: 3px solid rgba(229, 8, 8, 0.5);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1), 0px 3px 6px rgba(0, 0, 0, 0.13);
 }
 /* SUBMIT color */
 section.ggeWidget .ggePageNav--forward button.ggeButton--forward ~ button {
@@ -581,18 +588,22 @@ section.ggeWidget .ggePageNav--forward button.ggeButton--forward ~ button {
     width: 186px;
     margin: 0;
 }
-section.ggeWidget .ggePageNav--forward button.ggeButton--forward:hover,
-section.ggeWidget .ggePageNav--forward button.ggeButton--forward:focus {
-    background: #006b81;
-    border: 3px solid #006b81;
+section.ggeWidget .ggePageNav--forward button.ggeButton--forward:hover {
+    background: #006B81;
+    border: 1px solid #007C92;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.15);
     text-decoration: none;
 }
 section.ggeWidget .ggePageNav--forward button.ggeButton--forward:focus{
+    background: #006B81;
     border: 3px solid rgba(0, 154, 180, 0.5);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1), 0px 3px 6px rgba(0, 0, 0, 0.13);
+    text-decoration: none;
 }
 section.ggeWidget .ggePageNav--forward button.ggeButton--forward:active{
-    background: #007c92;
+    background: #007C92;
     border: 3px solid rgba(0, 154, 180, 0.5);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1), 0px 3px 6px rgba(0, 0, 0, 0.13);
 }
 section.ggeWidget .ggePageNav--forward button.ggeButton--forward:disabled {
     background: #b1b1b1;
