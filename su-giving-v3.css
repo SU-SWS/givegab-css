@@ -419,6 +419,9 @@ section.ggeWidget .ggePaymentPlan fieldset .ggePrompt--ongoingOption .ggePrompt_
 section.ggeWidget .ggePaymentPlan fieldset .ggePrompt--ongoingOption .ggePrompt__label {}
 section.ggeWidget .ggePaymentPlan fieldset .ggePrompt--ongoingOption .ggePrompt__label label { padding-left:0;}
 section.ggeWidget .ggePaymentPlan fieldset .ggePrompt--ongoingOption .ggePrompt__label label .ggePaymentPlan--ongoingOption__interval {}
+@media only screen and (max-width: 600px) {
+section.ggeWidget .ggePaymentPlan fieldset .ggePrompt--ongoingOption .ggePrompt__label label .ggePaymentPlan--ongoingOption__interval { display: block;}
+}
 section.ggeWidget .ggePaymentPlan fieldset .ggePrompt--ongoingOption .ggePrompt__label label .ggePaymentPlan--ongoingOption__interval select { width: 10em;}
 
 /* YOUR INFORMATION SECTION */
