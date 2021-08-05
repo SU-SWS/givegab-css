@@ -913,7 +913,6 @@ section.ggeWidget .ggeSection .ggeQuestion--required.ggeAddress .ggeAddress__str
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive button.ggeButton--deleteDc { margin-right:1em !important;}
 
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer { display:block !important; margin-top:16px !important;}
-    section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--add,
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--add .ggeDc__cell { display:block !important;}
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--add button.ggeButton--addDc { width:calc(100% - 1em) !important;}
 
@@ -954,5 +953,9 @@ section.ggeWidget .ggeSection .ggeQuestion--required.ggeAddress .ggeAddress__str
 
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row .ggeDc__cell:first-of-type,
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row .ggeDc__cell:nth-of-type(2) { width: 100%;}
+
+    .ggeTabListItem button {
+        font-size: 10px
+    }
 
 }
