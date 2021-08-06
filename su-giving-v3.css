@@ -74,7 +74,7 @@ label[for="ggeDc__row1__col1__other"] { /** Style the "Other" label **/
     padding: 5px;
     display: flex;
     box-sizing: border-box;
-    justify-content: space-around;
+    justify-content: space-between;
     border-radius: 3px;
 }
 .ggeTabPanelContainer {
@@ -92,7 +92,7 @@ label[for="ggeDc__row1__col1__other"] { /** Style the "Other" label **/
 .ggeTabListItem.ggeTabListItem--selected button,
 .ggeTabListItem.ggeTabListItem button:hover {
     background: #007C92;
-    padding: .9em 2.5em;
+    padding: 1.4rem 2.5em 1.5rem;
 }
 .ggeTabListItem.ggeTabListItem button:active,
 .ggeTabListItem.ggeTabListItem button:focus {
@@ -108,7 +108,7 @@ label[for="ggeDc__row1__col1__other"] { /** Style the "Other" label **/
     cursor: pointer;
     font-size: 23px;
     font-weight: 600;
-    padding: 0.9em 2.5em;
+    padding: 1.4rem 2.5em 1.5rem;
     -webkit-transition: none;
     -o-transition: none;
     transition: none;
