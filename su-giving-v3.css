@@ -966,7 +966,7 @@ section.ggeWidget .ggeSection .ggeQuestion--required.ggeAddress .ggeAddress__str
     .ggeTabListItem button {
         border: 1px solid #C0C0BF;
     }
-    ..ggeTabListItem.ggeTabListItem--selected button {
+    .ggeTabListItem.ggeTabListItem--selected button {
         border: none;
     }
 }
