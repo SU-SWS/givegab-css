@@ -801,7 +801,8 @@ section.ggeWidget .ggePrompt__checkbox input[type=checkbox]:checked {
 }
 
 #DonationLevel .ggeDc__row .ggeDc__cell:nth-child(3) {
-    width: 145px;
+    width: auto;
+    margin-left: 10px;
 }
 
 div.ggeQuestion.ggeQuestion--instructions {
@@ -895,7 +896,7 @@ section.ggeWidget .ggeSection .ggeQuestion--required.ggeAddress .ggeAddress__str
     /* PREVENT DOUBLE ROWS ON LOAD */
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row.ggeHidden { display: none !important;}
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row-group .ggeDc__row,
-    section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer { padding-top:16px !important; border-top:1px solid #ccc !important;}
+    section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer {padding-top:16px !important;}
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row-group .ggeDc__row--header,
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row-group .ggeDc__row:nth-of-type(2)  { padding-top:0 !important; border: none !important;}
     
@@ -914,18 +915,17 @@ section.ggeWidget .ggeSection .ggeQuestion--required.ggeAddress .ggeAddress__str
 
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer { display:block !important; margin-top:16px !important;}
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--add .ggeDc__cell { display:block !important;}
-    section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--add button.ggeButton--addDc { width:calc(100% - 1em) !important;}
 
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive input.ggeQuestion--money--multigive { width: 8.5em !important;}
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive input.ggeQuestion--money--multigive:disabled { cursor:not-allowed !important;}
 
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal,
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell { display:block !important;}
-    section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell:first-of-type { float:left !important;}
+    section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell:first-of-type {float:left !important;width: auto;}
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell:nth-of-type(2),
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell:nth-of-type(4) { display: none !important;}
 
-    section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell--subtotal { float:right !important; text-align:right !important;}
+    section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell--subtotal {float: left;text-align:right !important;}
 
     section.ggeWidget .ggePageNav--forward button.ggeButton--forward {
         margin: 0;
@@ -952,10 +952,21 @@ section.ggeWidget .ggeSection .ggeQuestion--required.ggeAddress .ggeAddress__str
     }
 
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row .ggeDc__cell:first-of-type,
-    section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row .ggeDc__cell:nth-of-type(2) { width: 100%;}
+    section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row .ggeDc__cell:nth-of-type(2) {width: 100%;}
 
-    .ggeTabListItem button {
-        font-size: 10px
+    /* Tabs */
+    .ggeTabList {
+        flex-direction: column;
+        border: none;
     }
-
+    .ggeTabListItem {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .ggeTabListItem button {
+        border: 1px solid #C0C0BF;
+    }
+    .ggeTabListItem.ggeTabListItem--selected button {
+        border: none;
+    }
 }
