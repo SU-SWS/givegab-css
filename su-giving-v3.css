@@ -754,6 +754,7 @@ section.ggeWidget footer.ggeFooter .ggeSecure { display: none;}
 
 section.ggeWidget .ggeSection--donation .ggeQuestion--multigive,
 section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc.DonationLevel { width:100%;}
+section.ggeWidget .ggeSection--donation .ggeQuestion--multigive:not(.su-step1) .ggeDc#DonationLevel .ggeDc__row--subtotal { display: none; }
 section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row .ggeDc__cell:first-of-type,
 section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row .ggeDc__cell:nth-of-type(2) {width: 100%;padding-right: 0;}
 section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row .ggeDc__cell input.ggeQuestion--money--multigive { width: 154px;}
@@ -807,7 +808,6 @@ section.ggeWidget .ggePrompt__checkbox input[type=checkbox]:checked {
 
 #DonationLevel .ggeDc__row .ggeDc__cell:nth-child(3) {
     width: auto;
-    margin-left: 10px;
 }
 
 div.ggeQuestion.ggeQuestion--instructions {
@@ -925,7 +925,7 @@ section.ggeWidget .ggeSection .ggeQuestion--required.ggeAddress .ggeAddress__str
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive input.ggeQuestion--money--multigive:disabled { cursor:not-allowed !important;}
 
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal,
-    section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell { display:block !important;}
+    section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell { display:none;}
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell:first-of-type {float:left !important;width: auto;}
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell:nth-of-type(2),
     section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--subtotal .ggeDc__cell:nth-of-type(4) { display: none !important;}
