@@ -418,6 +418,7 @@ section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row--sub
 }
 section.ggeWidget .ggeSection--donation .ggeQuestion--multigive .ggeDc__row--subtotal .ggeDc__cell--subtotal {
     font-weight: 400;
+    padding-left: 5px;
 }
 /* HIDE THE "ADD ANOTHER GIFT" BUTTON ON SPECIFIC FORMS */
 section.ggeWidget.multigive-pledge-autopay .ggeSection--donation .ggeQuestion--multigive .ggeDc__footer .ggeDc__row--add,
