@@ -89,14 +89,19 @@ label[for="ggeDc__row1__col1__other"] { /** Style the "Other" label **/
     -webkit-transform: none;
     transform: none;
 }
-.ggeTabListItem.ggeTabListItem--selected button,
-.ggeTabListItem.ggeTabListItem button:hover {
+.ggeTabListItem.ggeTabListItem--selected button {
     background: #007C92;
+    padding: 1.4rem 2.5em 1.5rem;
+}
+.ggeTabListItem.ggeTabListItem button:hover {
+    background: #006B81;
     padding: 1.4rem 2.5em 1.5rem;
 }
 .ggeTabListItem.ggeTabListItem button:active,
 .ggeTabListItem.ggeTabListItem button:focus {
+    background: #006B81;
     outline: none;
+    padding: 1.4rem 2.5em 1.5rem;
 }
 .ggeTabListItem button {
     -webkit-appearance: none;
