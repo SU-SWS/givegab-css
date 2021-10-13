@@ -239,6 +239,9 @@ section.ggeWidget .ggePrompt__checkbox input[type=checkbox]{
     border-color: #007c92;
 }
 
+.ggePrompt {
+    display: flex;
+}
 /** HIDE MCMR QUESTION FIELDSET > LEGENDS **/
 section.ggeWidget .ggeQuestion.su-business fieldset legend,
 section.ggeWidget .ggeQuestion.su-anon fieldset legend,
