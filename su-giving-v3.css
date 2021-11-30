@@ -61,6 +61,9 @@ body {
 #ggeDc__row1__col2:disabled { /** Hide the second dropdown field if it doesn't have a value **/
   
 }
+.ggeDc__other__container {
+    margin-top: 15px;
+}
 label[for="ggeDc__row1__col1__other"] { /** Style the "Other" label **/
     padding: .66em 0 .33em 0;
     font-weight:600;
